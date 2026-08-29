@@ -138,14 +138,14 @@ sass:
 #   google:
 #     id: "G-XXXXXXXXXX"
 
-# Comments (giscus 配置 - 需填入 repo_id 和 category_id)
-# comments:
-#   provider: "giscus"
-#   giscus:
-#     repo_id: "your_repo_id"
-#     category: "Announcements"
-#     category_id: "your_category_id"
-#     mapping: "pathname"
-#     reactions_enabled: "1"
-#     theme: "preferred_color_scheme"
-#     lang: "zh-CN"
+# Comments (giscus 评论系统)
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id: "R_kgDOUHGZzg"
+    category: "Announcements"
+    category_id: "DIC_kwDOUHGZzs4DEbrN"
+    mapping: "pathname"
+    reactions_enabled: "1"
+    theme: "preferred_color_scheme"
+    lang: "zh-CN"
