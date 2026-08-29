@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: single
 title: 关于
 permalink: /about/
+author_profile: true
 ---
 
 ## 你好，我是 Dancy 👋

@@ -1,0 +1,33 @@
+# Site settings
+title: Dancy's Blog
+description: >-
+  记录 Python 学习、算法练习与技术思考的个人博客。
+author: chendongjie76-droid
+email: chendongjie76-droid@users.noreply.github.com
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Header navigation
+header_pages:
+  - about.md
+
+# Social links
+github_username: chendongjie76-droid
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+
+# Permalink
+permalink: /:year/:month/:day/:title/
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

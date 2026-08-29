@@ -1,33 +1,151 @@
-# Site settings
-title: Dancy's Blog
+# Site Settings
+title: "Dancy's Blog"
+title_separator: "-"
+subtitle: "Python 学习 | 算法练习 | 技术思考"
+name: "Dancy"
 description: >-
   记录 Python 学习、算法练习与技术思考的个人博客。
-author: chendongjie76-droid
-email: chendongjie76-droid@users.noreply.github.com
+url: "https://chendongjie76-droid.github.io"
+baseurl: ""
+repository: "chendongjie76-droid/chendongjie76-droid.github.io"
+teaser: # 文章缩略图路径
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# Theme
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default" # default, air, contrast, dark, dirt, mint, sunrise
 
-# Header navigation
-header_pages:
-  - about.md
+# Search
+search: true
+search_provider: lunr
 
-# Social links
-github_username: chendongjie76-droid
-
-# Markdown
-markdown: kramdown
-highlighter: rouge
-
-# Permalink
+# Outputting
 permalink: /:year/:month/:day/:title/
+paginate: 10
+paginate_path: /page:num/
+timezone: Asia/Shanghai
 
-# Exclude from build
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Files to exclude from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
   - node_modules
+  - _config.yml.minima.backup
+  - .sync-manifest.json
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "目录"
+      show_date: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Site Author
+author:
+  name: "Dancy"
+  avatar: # 头像路径，如 /assets/images/avatar.png
+  bio: "Python 学习者 | 算法练习中 | 持续学习，持续输出 📚"
+  location: "China"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chendongjie76-droid"
+    - label: "学习笔记"
+      icon: "fas fa-fw fa-book"
+      url: "https://github.com/chendongjie76-droid/learning-notes"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:chendongjie76-droid@users.noreply.github.com"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chendongjie76-droid"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Analytics (可选，填入 Google Analytics ID)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     id: "G-XXXXXXXXXX"
+
+# Comments (giscus 配置 - 需填入 repo_id 和 category_id)
+# comments:
+#   provider: "giscus"
+#   giscus:
+#     repo_id: "your_repo_id"
+#     category: "Announcements"
+#     category_id: "your_category_id"
+#     mapping: "pathname"
+#     reactions_enabled: "1"
+#     theme: "preferred_color_scheme"
+#     lang: "zh-CN"
