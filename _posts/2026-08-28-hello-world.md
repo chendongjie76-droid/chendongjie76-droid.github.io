@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Hello World - 博客开篇"
 date: 2026-08-28 21:00:00 +0800
 categories: [随笔]

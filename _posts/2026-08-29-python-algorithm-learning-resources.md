@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Python 与算法学习资源推荐"
 date: 2026-08-29 10:00:00 +0800
 categories: [资源推荐]
